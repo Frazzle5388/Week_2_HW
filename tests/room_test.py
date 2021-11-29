@@ -20,7 +20,7 @@ class TestRoom(unittest.TestCase):
         self.assertEqual(3, self.room.guest_count())
 
     def test_room_can_check_in_guests(self):
-        guest_4 = Guests("Mr Yellow")
+        guest_4 = Guest("Mr Yellow")
         self.room.add_guest(guest_4)
         self.assertEqual(4, self.room.guest_count())
 
